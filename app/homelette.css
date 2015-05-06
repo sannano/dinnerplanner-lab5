@@ -1,0 +1,70 @@
+html, body {
+	height:100%;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h4 {
+	font-style: italic;
+	vertical-align: text-bottom;
+	display: inline;
+}
+h3.head {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 20px;
+	font-style: bold;
+}
+#matbox {
+	margin-top:20px;
+	text-align: center;
+}
+
+#headview {
+	padding-bottom:2%;
+	width: 100%;
+	background-color:rgba(255,228,142,1);
+}
+
+.dish {
+	border: 2px solid #cccccc;
+	border-radius: 9px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+}
+p.small {
+	padding-top:2px;
+}
+
+#headerView {
+	background-color:#cccccc;
+	padding:2%;
+}
+
+#menyrow {
+	padding: 10px;
+}
+#menyView {
+	padding:0px, 0px, 5px, 5px;
+	background-color:rgba(255,228,142,1);
+}
+
+#ingBox{
+	padding:5px;
+	background-color:rgba(255,228,142,1);
+}
+#ingTab {
+	margin:5px;
+}
+
+td {
+	padding: 10px;
+}
+
+#select_dish_row{
+	padding-bottom:2%;
+	background-color:rgba(255,228,142,1);
+}

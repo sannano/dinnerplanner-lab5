@@ -1,0 +1,27 @@
+<!-- We include the sidebar as it is shared across two screens. -->
+	<ng-include src="'partials/search.html'" ng-controller="SearchCtrl"></ng-include>
+<div class="col-md-10 select">
+
+	<div class="col-md-7 select">
+	{{status}}
+	<div ng-controller="DishCtrl">
+		<h3>{{dish.Title}}</h3>
+		<img ng-src="{{dish.ImageURL}}" alt="Image of {{dish.Title}}" width="300px"/><p>{{dish.Instructions}}</p>
+	</div>
+</div>
+
+<div ng-controller="DishCtrl" class="col-md-4 select" id="ingBox">
+	<table id="ingTab">
+		<tr ng-repeat="ing in dishIng">
+			<td><h5>{{ing.Name}} </h5></td><td ng-controller="DinnerCtrl"> - {{ing.MetricQuantity*getNumberOfGuests()}} {{ing.MetricUnit}}</td>
+		</tr>
+	</table>
+	<div ng-controller="DinnerCtrl">
+	<button data-ng-attr-id="btnId" ng-click="add(btnId)" type='button' class='btn-custom' id='{{dish.RecipeID}}'>Select Dish</button>
+</div>
+</div>
+
+
+</div>
+<!-- TODO in Lab 5: Display the dish information including image, Description, 
+Instructions, Ingredients and total cost. -->

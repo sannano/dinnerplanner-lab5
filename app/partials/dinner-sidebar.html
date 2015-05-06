@@ -1,0 +1,24 @@
+<div class="col-md-2" id="menyView">
+<div ng-controller="DinnerCtrl">
+<h3>My Dinner</h3>
+People: <input type="number" ng-model="numberOfGuests" ng-change="setNumberOfGuest(numberOfGuests)"/>
+<div class="row" id="menyrow"><br/>
+<div ng-controller="DishCtrl" class="col-md-4 select">
+	<table class='table table-bordered'>
+		<tr><th>Dish</th><th>Cost</th></tr>
+		<tr ng-repeat="i in dishMenu">
+			<td><h5>{{i.Title}} </h5></td><td ng-controller="DinnerCtrl"> {{i.Title}} <span ng-click="remove(btnId)" class='badge' data-ng-attr-id="btnId">x</span></td>
+		</tr>
+	</table>
+
+</div>
+	</table><hr/>
+	<p ng-controller="DinnerCtrl">Total price:  {{getNumberOfGuests()}}
+		{{getTotalMenuPrice()*getNumberOfGuests()}}</p>
+</div>
+<a href="#/overview" class="btn btn-primary">Confirm Dish</a>
+</div>
+
+<!-- TODO in Lab 5: Display the items on the menu with cost for each -->
+
+</div>

@@ -1,0 +1,18 @@
+
+<div id="headview" ng-controller="DinnerCtrl">
+	<h3 class="head">Number of guests: {{getNumberOfGuests()}}</h3>
+</div> 
+<div class="col-md-12">
+	<div id="matbox">
+	<div ng-controller="DishCtrl" class="col-md-4 select">
+	<table class='table table-bordered'>
+		<tr><th>Dish</th><th>Cost</th></tr>
+		<tr ng-repeat="i in dishMenu">
+			<td><h5>{{i.Title}} </h5></td></td>
+		</tr>
+	</table>
+
+</div>
+		<a href="#/overview" class="btn btn-primary">Confirm Dish</a>
+	</div>
+</div>
